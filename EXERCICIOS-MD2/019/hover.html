@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+</head>
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover{
+            color: blue;
+        }
+        div:hover > p{
+            display: block;
+        }
+
+        h1:hover{
+            color: blue;
+        }
+
+        /* o uso dessas pseudo-classes é algo muito util para, por exemplo, criar o efeito de destaque dos menus */
+    </style>
+<body>
+    <h1>EXEMPLO DE HOVER</h1>
+    <p>Deslize o mouse sobre o texto abaixo:</p>
+    <div>
+        PASSE O MOUSE AQUI!
+        <p>Você achou o texto escondido!</p>
+    </div>
+</body>
+</html>

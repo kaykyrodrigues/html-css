@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+    tudo que é id em html vai ser # em css (só pode um elemento por pagina)
+    tudo que em html é class em css é . (pode varios elementos na mesma pagina)
+*/
+
+body{
+    background-color: rgb(244, 228, 206);
+    text-align: justify;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #232C33;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    color: rgb(68, 41, 21);
+}
+
+.titulo{
+    color: rgb(68, 41, 21);
+}
+
+h1#prin{
+    /*
+        o nome do id é "prin" e ele pode ser usado para outros tags, ou seja, prin pode ser um id que abarca varias outras tags.
+    */
+    color: white;
+    text-align: center;
+    background-color: rgb(68, 41, 21);
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.249);
+}
+
+h2{
+    color: rgb(5, 3, 1);
+    text-align: center;
+}
+
+p{
+    color: rgb(0, 0, 0);
+
+
+    text-align: justify;
+    text-align: center;
+}
+
+.destaque{
+    background-color: rgba(255, 224, 196, 0.548);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            /* display é ficar um do lado do outro */
+            background-color: rgba(113, 113, 113, 0.455);
+            border: 1px solid rgb(0, 0, 0);
+            /* border é a borda */
+            border-radius: 10px;
+            /* border radius é o formato da borda */
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div#d1:hover{
+            background-color: rgb(136, 38, 38);
+        }
+
+        div#d2:hover{
+            background-color: rgb(139, 18, 18)
+        }
+
+        div#d3:hover{
+            background-color: rgb(135, 1, 1)
+        }
+
+        /* "hover" é um estado. ele só vai acontecer quando o mouse, por exemplo, passar por cima */
+
+        /* os dois pontos ":" são pseudo-classes que podem ser utilizadas em conjunto de um id ou classe */
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
