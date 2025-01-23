@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 </head>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
 
             /*
             - Utilizando o "cover", é possivel cobrir toda a tela. 
             - Utilizando o "contain" é possivel cobrir 100% da tela (mas ainda vai ficar com bordas)
             - O "100vh" é para que a viewport seja máxima
+            - o "attachment" se chama vinculo. "fixed" significa que ele vai fixo no fundo, ou seja, não vai rolar junto com o conteudo. "scroll" vai rolar junto com o conteudo.
             */
+
+            /*
+             shorthand - background:display:
+                color > image > position > repeat >  [size] > attachment
+
+                (shorthand é um código utilizasdo para comprimir vários em um só, permitindo "abreviar o uso")
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /* o size não funciona, apesar de estar no manual que sim. É preciso adicionar ele separadamente */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
+            /* 
+            O "max-width" permite que a tela quebre junto do conteudo, não fazendo ela cobrir mais do que o necessario
+            */
             padding: 10px;
             margin: auto;
             border: black;
@@ -33,6 +50,8 @@
 <body>
     <main>
         <h1>Testando</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam quia officiis distinctio, asperiores voluptas numquam corporis facilis quae architecto ullam laboriosam dolores impedit porro quis quidem autem placeat eligendi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam quia officiis distinctio, asperiores voluptas numquam corporis facilis quae architecto ullam laboriosam dolores impedit porro quis quidem autem placeat eligendi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam quia officiis distinctio, asperiores voluptas numquam corporis facilis quae architecto ullam laboriosam dolores impedit porro quis quidem autem placeat eligendi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam quia officiis distinctio, asperiores voluptas numquam corporis facilis quae architecto ullam laboriosam dolores impedit porro quis quidem autem placeat eligendi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam quia officiis distinctio, asperiores voluptas numquam corporis facilis quae architecto ullam laboriosam dolores impedit porro quis quidem autem placeat eligendi?</p>
