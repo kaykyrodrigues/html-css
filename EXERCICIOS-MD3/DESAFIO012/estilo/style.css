@@ -58,6 +58,11 @@ section{
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 5vw;
+    box-shadow: inset 6px 6px 13px #0000004f;
+}
+
+section > p{
+    padding-bottom: 1em;
 }
 
 section.branco{
@@ -67,17 +72,30 @@ section.branco{
 section.imagem{
     background-color: rgb(36, 34, 32);
     color: white;
+    background-size: cover;
 }
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.373);
     display: inline-block;
     padding: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
 
 }
 
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right, center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    background-position: right, center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 footer{
     background-color: black;
