@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: left;
+        }
+
+        caption{
+            font-weight: 1.5em;;
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgb(187, 187, 187);
+            border: 1px solid black;
+        }
+
+        table{
+            width: 500px;
+            padding: 0px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n-1){ /* even (par) ou odd (impar), 2n > outras configurações desse comando */
+            background-color: rgb(187, 187, 187);
+
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(76, 76, 76);
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION (legenda)
+            THEAD
+                TR
+                TD
+                TH
+            TBODY
+                TR
+                TD
+                TH
+            TFOOT
+                TR
+                TD
+                TH
+    --> 
+    <table>
+    <caption> População das Unidades Federativas </caption>
+        <thead>
+            <th scope="col">Posição</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 150px;">Área (km2)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Amazonas">Amazonas</a></td>
+                <td class="num">1 559 167,889</td>
+            </tr>:
+            <tr>
+                <th>2</th>
+                <td><a href="https://pt.wikipedia.org/wiki/Par%C3%A1">Pará</a></td>
+                <td class="num">1 245 870,798</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td><a href="#">Mato Grosso</a></td>
+                <td class="num">903 207,019</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td><a href="#">Minas Gerais</a></td>
+                <td class="num">586 521,123</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td><a href="#">Bahia</a></td>
+                <td class="num">564 760,427</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td><a href="#">Mato Grosso do Sul</a></td>
+                <td class="num">357 145,534</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td><a href="#">Goiás</a></td>
+                <td class="num">340 203,329</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td><a href="#">Maranhão</a></td>
+                <td class="num">329 642,182</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td><a href="#">Rio Grande do Sul</a></td>
+                <td class="num">281 707,156</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td><a href="#">Tocatins</a></td>
+                <td class="num">277 466,763</td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td><a href="#">Piaui</a></td>
+                <td class="num">251 756,515</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Kilometros</th>
+                <td>Brasil</td>
+                <td class="num"><strong>10 897 200,78</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
