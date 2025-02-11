@@ -23,15 +23,24 @@
 
         table{
             width: 500px;
-            padding: 0px;
             border-collapse: collapse;
             text-align: center;
+            position: relative;
+            /* o relative faz parte do recurso que deixa o thead fixo*/
         }
 
         tbody tr:nth-child(2n-1){ /* even (par) ou odd (impar), 2n > outras configurações desse comando */
             background-color: rgb(187, 187, 187);
 
         }
+        
+        thead, th{ /* Recurso que deixa a posição da thead fixa (melhor em tabela grandes)*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(76, 76, 76);
+
+        }
+
         td, th{
             border: 1px solid black;
             padding: 7px;
@@ -129,6 +138,36 @@
                 <th>11</th>
                 <td><a href="#">Piaui</a></td>
                 <td class="num">251 756,515</td>
+            </tr>
+            <tr>
+                <th>12</th>
+                <td><a href="#">São Paulo</a></td>
+                <td class="num">248 603,905</td>
+            </tr>
+            <tr>
+                <th>13</th>
+                <td><a href="#">Rio de Janeiro</a></td>
+                <td class="num">233 570,505</td>
+            </tr>
+            <tr>
+                <th>14</th>
+                <td><a href="#">Ceará</a></td>
+                <td class="num">220 850,640</td>
+            </tr>
+            <tr>
+                <th>15</th>
+                <td><a href="#">Rio Grande do Norte</a></td>
+                <td class="num">218 603,905</td>
+            </tr>
+            <tr>
+                <th>16</th>
+                <td><a href="#">Paraná</a></td>
+                <td class="num">210 503,885</td>
+            </tr>
+            <tr>
+                <th>12</th>
+                <td><a href="#">São Paulo</a></td>
+                <td class="num">258 603,905</td>
             </tr>
         </tbody>
         <tfoot>
