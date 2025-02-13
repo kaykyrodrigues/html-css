@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        tbody tr:nth-child(even){
+            background: rgb(180, 180, 180);
+        }
+
+        caption{
+            padding: 5px;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+
+        th{
+            background-color: grey;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        div#container{
+            overflow: auto;
+            /*O overflow (conteudo que transborda) serve para especificar a rolagem da tela, deixando-a apenas na div marcada. 
+
+            A configuração padrão de se usar é auto
+            O overflow Y é apenas para rolagem vertical
+            O overflow X apenas para horizontal */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur voluptatum in doloremque voluptatem, beatae cumque, aperiam iure ea repellendus ipsa quod? Quidem quas voluptate at magnam maiores tenetur doloremque.</p>
+    <div id="container">
+        <table>
+            <caption>
+                Tabela Responsiva
+            </caption>
+            <thead>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+                <th>Status Civil</th>
+                <th>Estado</th>
+                <th>Cidade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>35</td>
+                    <td>M</td>
+                    <td>Banqueira</td>
+                    <td>Casada</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
