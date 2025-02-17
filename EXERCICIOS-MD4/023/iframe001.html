@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 410px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do Curso em Video para aprender a programar
+    
+        <!--Tamanho padrão do iframe: 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+            <!-- O ifrqme serve para incorporar paginas de outros sites ao seu, dessa forma elas vão aparecer nele-->
+
+            <!--O "scrolling='no'" serve para tirar a rolagem lateral do site que foi mostrado no iframe. Ele pode não funcionar em alguns navegadores-->
+
+            <a href="https://www.cursoemvideo.com" target="_blank"></a>
+
+            <!--Porém nem todos os navegoradores são compativeis com o iframe, por isso sempre use o "a" para linkar o outro site-->
+
+        </iframe>
+    
+    </p>
+</body>
+</html>
