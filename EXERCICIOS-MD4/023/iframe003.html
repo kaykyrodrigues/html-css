@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame 03</title>
+    <style>
+        h1{
+            margin: 0;
+            padding: 0;
+        }
+        
+        p{
+            margin: auto;
+        }
+
+        ol{
+            margin: 2;
+        }
+
+        iframe{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha uma página</h1>
+    <p>A página escolhida aparecerá na tela abaixo.</p>
+    <ol>
+        <li><a href="paginas/pag001.html" target="frame">Página 01</a></li>
+        <li><a href="paginas/pag002.html" target="frame">Página 02</a></li>
+        <li><a href="paginas/pag003.html" target="frame">Página 03</a></li>
+    </ol>
+
+    <iframe name="frame" src="" frameborder="0">
+        <p>Ocorreu um erro do navegador</p>
+    </iframe>
+</body>
+</html>
