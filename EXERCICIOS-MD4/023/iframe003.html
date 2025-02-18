@@ -20,6 +20,8 @@
 
         iframe{
             height: 400px;
+            width: 100vw;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -32,8 +34,10 @@
         <li><a href="paginas/pag003.html" target="frame">Página 03</a></li>
     </ol>
 
-    <iframe name="frame" src="" frameborder="0">
+    <iframe name="frame" src="" frameborder="0" srcdoc="<img src='imagens/totorowallpaper.png'>">
         <p>Ocorreu um erro do navegador</p>
     </iframe>
+
+    <!--O "srcdoc" serve para colocar códigos ou arquivos simples dentro do iframe, quando ele ainda não abre algum link. Não é o recomendado para trabalhos mais complexos-->
 </body>
 </html>
