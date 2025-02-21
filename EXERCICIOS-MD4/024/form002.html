@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Nome:</label>
+            <input type="text" name="usu" id="iusu" required size="20" placeholder="Digite o seu nome" autocomplete="username">
+
+            <!-- 
+            O "required" é utilizado para requerir alguma coisa. Por exemplo, requerir que um campo seja obrigatoriamente preenchido (impedindo enviar campos que não tenham dados nele)
+
+            O "size" determina o tamanho da caixa
+
+            O "placeholder" serve para deixar uma mensagem prévia na caixa. Tipo "Digite o seu nome". Essa mensagem vai sumir assim que algo for digitado
+
+            O "autocomplete" também serve para completar automaticamente dados que já foram preenchidos. Ou seja, caso você coloque uma senha, ela será sugerida outra vez quando você for logar novamente
+            -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="20" size="20" placeholder="Digite sua senha" autocomplete="current-password">
+
+            <!--
+            Além disso, o required serve para requisições mais específicas, como por exemplo delimitar a quantidade minima de carácteres para uma senha. Ou também para criar um numero maximo de caracteres. Esses dois ultimos comandos são o "minlength" e o "maxlength"
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

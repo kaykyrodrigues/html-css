@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--
+        O "action" significa para onde o form vai
+
+        O "method" é o método que vai ser utilizado para a postagem dos dados do formulario. No HTML existem dois: o 'GET' e o 'POST', sendo o GET o base. O GET se usa quando não estiver pedindo dados sensiveis, tipo a senha - esse uso é para o post. Exemplo: GET pede nome, POST pede CPF. Quando se envia dados pelo GET, só se pode enviar até 3mil bytes (letras) e não se pode usar ele para enviar fotos. Para isso, é necessário usar o POST (no caso, em senha, é mais necessario o uso de https). O POST serve também  para envio de arquivos
+
+        O "autocomplete" serve pra tirar as sugestões de nomes ou outras escritas que ficam abaixo do formulário
+        -->
+        <p><label for="iNome">Nome: </label><input type="text" name="Nome" id="iNome"></p>
+        <!-- 
+        O uso do "name" e do "id" são necessários. O name é utilizado mais para linguagens como PHP e HTML, o id mais para linguagens como o JavaScript e também para o uso do Label
+        -->
+        <p><label for="iSobrenome">Sobrenome: </label><input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <input type="submit" value="Enviar">
+
+        <!--
+        O "Label" é obrigatório de ser utilizado em formulários. Com ele, os mecanismos de busca do google entendem que, por exempço, o "Nome" faz parte do formulario
+        -->
+    </form>
+</body>
+</html>
