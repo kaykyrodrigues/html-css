@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 03</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30">
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="Media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+            
+            <!--
+            O "input:number" serve para que apenas caracteres de numeros sejam escrito na caixa
+
+            O "min" significa o minimo de uma caixa numerica, o "max" significa o maximo
+
+            O "step" significam os passos, ou seja, de quanto em quanto o valor vai mudando
+
+            O "value" define um valor prévio, que diferente do placeholder, está preenchendo a caixa. O value automaticamente anula o placeholder
+            -->
+        </p>
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="" id="" value="2025-02">
+
+            <!--
+            o "input:month", como o nome sugere, serve para que a caixa apenas tenha compatbilidade com a escrita de uma data
+            -->
+        </p>
+        <p>
+            <label for="iprova">Dia da Prova</label>
+            <input type="date" name="data" id="idata" value="2025-02-21">
+
+            <!--
+            O "input:data" serve para criar um campo de data (dia, mês, ano)
+            -->
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" value="12:00">
+
+            <!--
+            o "input:time" cria um campo com um horário
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
