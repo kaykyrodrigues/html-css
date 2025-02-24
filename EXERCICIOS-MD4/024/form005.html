@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 05</title>
+</head>
+<body>
+    <h1>Exemplo de Form</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+        <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <!-- O "radio" e a "checkbox" possuem praticamente a mesma função de marcar opções. 
+        Pra resolver o problema da marcação do radio, é só colocar o name dos dois inputs semelhantes
+        O "checked" serve para deixar algo marcado previamente-->
+        <fieldset>
+            <legend>Esportes favoritos</legend>   
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esna" id="iesna"> <label for="iesna">Natação</label><br>
+            <input type="checkbox" name="este" id="ieste"> <label for="ieste">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
