@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical Device Breakpoints: 
+
+Telas pequenas (celulares...): max-min 600px;
+Telas medias (tablets...): min 768px;
+Telas maiores (laptops, desktop...): min 992px;
+Telas muito grandes (tv...): min 1200px;
+
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        margin: auto;
+        display: inline-block;
+        width: 24.8vw;
+    }
+
+    main {
+        width: 768px;
+    }
+}
