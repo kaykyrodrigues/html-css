@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: cadetblue;
+
+            display: flex;
+            /* O "display: flex" é utilizado para que o container se torne uma flexbox.  */
+
+            flex-direction: row;          
+            /* O "flex-direction" significa a direção em que o container vai apontar. 
+
+            Existem o "row" e o "column". O row é da esquerda para a direita, o column de baixo para cima. Para fazer na direção contraria, basta adicionar o "reverse"
+
+            Exemplo: flex-direction: reverse-row;*/ 
+
+            flex-wrap: wrap;
+
+            /* O "flex-wrap" é o código que vai determinar como o container vai se comportar quando a tela for esticada. 
+
+            O "no-wrap" é o comando padrão e significa que não vai quebrar.
+
+            O encolhimento dos itens dentro do container vão depender do encolhimento do contéudo. Exemplo: um texto vai diminuir de acordo com o tamanho da palavra mais longa.
+            
+            Já o "wrap" permite a quebra, que vai ser quebrada no sentido do eixo transversal (o cross-axis de acordo com o flex-direction)
+
+            O "wrap-reverse" faz o efeito contrário
+            */
+
+            flex-flow: row wrap;
+
+            /* É possivel simplificar o "flex=direction" e o "flex-wrap" utilizando  o shorthand "flex-flow: (direction) (wrap);
+            
+            É recomendado usar flex-flow" */
+        }
+
+        div.item{
+            background-color: burlywood;
+            border: 1px solid black;
+            padding: 10px;
+
+
+            flex: auto;
+            
+            /* O "flex: auto" é utilizado para que os itens menores sejam abarcados na flexob *
+            
+            Ele não permite que tenha espaço em branco dentro ddo elemento-pai
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
