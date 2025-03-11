@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: cadetblue;
+
+            display: flex;
+            /* O "display: flex" é utilizado para que o container se torne uma flexbox */
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: burlywood;
+            border: 1px solid black;
+
+            flex: auto;
+            /* O "flex: auto" é utilizado para que os itens menores cubram a flexob */
+            flex-direction: row;
+            /* O "flex-direction" significa a direção em que o container vai apontar. 
+
+            Existem o "row" e o "column". O row é da esquerda para a direita, o column de baixo para cima. Para fazer na direção contraria, basta adicionar o "reverse"
+
+            Exemplo: flex-direction: reverse-row; */
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: calc(0);
+        }
+
+        div#i2{
+            order: calc(1);
+        }
+
+        div#i3{
+            order: calc(2);
+        }
+
+        div#i4{
+            order: calc(3);
+        }
+
+        div#i5{
+            order: calc(5);
+        }
+
+        div#i6{
+            order: calc(4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="order: calc(1);">A</div>
+        <!-- O uso do "order" serve para determinar a ordem em que o elemento virá, partindo do 0. Nesse caso, por receber o número 1 de ordenamento, a letrs A se tornou a última na ordem id
+="i1"-->
+        <div class="item" id="i1">B</div>
+        <div class="item" id="i2">C</div>
+        <div class="item" id="i3">D</div>
+        <div class="item" id="i4">E</div>
+        <div class="item" id="i5">F</div>
+        <div class="item" id="i6">G</div>
+    </div>
+</body>
+</html>
